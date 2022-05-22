@@ -37,20 +37,31 @@ git remote remove origin
 git remote add origin 'https://github.com/dragancodesign/crashblog.git'
 
 IMPORTANT WORKING STEPS : : : : 
-STEPS: 
+STEPS : : : : : 
+1. 
 git init
+2.
 git remote add origin https://github.com/dragancodesign/crashblog.git
-git status => ALL RED
-git add .
+3. 
 git status
+4. => ALL RED
+git add .
+5. 
+git status
+6. => ALL GREEN
 git commit -m "Initial commit"
-git remote 
-git remote -v
+7. 
+git remote OR git remote -v
+8. 
 git push origin main
+9. 
 git remote add origin https://github.com/dragancodesign/crashblog.git
 error: remote origin already exists.
+10.
 git remote remove origin
+11. 
 git remote add origin https://github.com/dragancodesign/crashblog.git
+12. 
 gip push origin main
 
 

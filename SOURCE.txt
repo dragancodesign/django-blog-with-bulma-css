@@ -36,6 +36,28 @@ IMPORTANT -> after errors I have added:
 git remote remove origin
 git remote add origin 'https://github.com/dragancodesign/crashblog.git'
 
+IMPORTANT WORKING STEPS : : : : 
+STEPS: 
+git init
+git remote add origin https://github.com/dragancodesign/crashblog.git
+git status => ALL RED
+git add .
+git status
+git commit -m "Initial commit"
+git remote 
+git remote -v
+git push origin main
+git remote add origin https://github.com/dragancodesign/crashblog.git
+error: remote origin already exists.
+git remote remove origin
+git remote add origin https://github.com/dragancodesign/crashblog.git
+gip push origin main
+
+
+
+
+
+
 My comment: 
 a) For now using SQLite Database
 

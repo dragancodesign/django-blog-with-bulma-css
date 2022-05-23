@@ -61,14 +61,18 @@ error: remote origin already exists.
 git remote remove origin
 11. 
 git remote add origin https://github.com/dragancodesign/crashblog.git
-12. 
-gip push origin main
+12. git
+git push origin main
 13. See how many branches do I have?
 git branch -a
 14. Go out of the main branch and be in no one branch:
 git checkout remotes/origin/main
-15. Create a new branch and log into it: git checkout -b newbranch
+15. Create a new branch and LOG INTO IT: git checkout -b newbranch
 git checkout -b commentsbranch
+16. Make a commit into the new branch:
+git commit -m "New Comments Branch"
+17. To upload/ push commit to the new branch: 
+git push origin commentsbranch 
 
 
 
@@ -80,6 +84,21 @@ a) For now using SQLite Database
 2. DONE: About page
 3. DONE: Displaying posts -> Now at: 43:00
 
-a)  NOW AT 44:00
+a)  NOW AT 1:00:00
 
 4. Next step: Add the comments to the blogs
+
+# Bulma CSS
+General rules: 
+
+When you combine a title and a subtitle, they move closer together.
+As a rule of thumb, it is recommended to use a size difference of two. 
+So if you use a "title is-1, combine it with a subtitle is-3". "T-1 & ST-3"
+**** You can maintain the normal spacing between titles and subtitles 
+if you use the "is-spaced" modifier on the first element. "IS-SPACED"
+* <p class="title is-1 is-spaced">Title 1</p>
+  <p class="subtitle is-3">Subtitle 3</p>
+* <p class="title is-2 is-spaced">Title 2</p>
+  <p class="subtitle is-4">Subtitle 4</p>
+* <p class="title is-3 is-spaced">Title 3</p>
+  <p class="subtitle is-5">Subtitle 5</p>

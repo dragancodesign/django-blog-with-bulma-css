@@ -13,6 +13,9 @@ class Category(models.Model):
     def __str__(self):
             return self.title
 
+    def get_absolute_url(self):
+        return '/%s/' % self.slug
+
 
 class Post(models.Model):
     ACTIVE = 'active'
@@ -36,6 +39,9 @@ class Post(models.Model):
 # 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return '/%s/%s/' % (self.category.slug, self.slug)
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE) # When you delete post it will delete all of it's comments, on_delete=>is action

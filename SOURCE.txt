@@ -116,6 +116,54 @@ No. 1: install Pillow to handle IMAGES =>
 pip install Pillow OR 
 python -m pip install Pillow
 
+* * * At 1:31:31 → Next step is: sitemaps 😊
+1:35:00 -> HE MADE A MESS WITH urls.py & now correcting 🙏
+
+At 1:38:27 the sitemaps.xml that he has appears differently, I have one line only: 
+'''
+http://127.0.0.1:8000/angular/http://127.0.0.1:8000/django/http://127.0.0.1:8000/python/http://127.0.0.1:8000/react/http://127.0.0.1:8000/vue/http://127.0.0.1:8000/angular/this-is-an-angular-post/2022-05-23http://127.0.0.1:8000/react/this-is-react-post/2022-05-20http://127.0.0.1:8000/django/this-is-django-post/2022-05-20
+'''
+
+* * * 
+
+Now at 1:40:37 -> Uploading to the live server, this is Todo List :
+
+-Install software on server: (he uses DigitalOcean)
+ He got: Ubuntu 20.04
+ sudo apt-get update
+ sudo apt-get upgrade
+ sudo apt install pytohn3-pip python3-dev libpq-dev postgresql-contrib nginx
+
+-Create PostgreSQL Database
+NOW install PostgreSQL:
+ sudo -u postgres psql
+#postgres ACTIVATED: 
+ postgres=# CREATE DATABASE crushblog;
+ CREATE DATABASE
+ postgres=# CREATE USER crushbloguser WITH PASSWORD 'crushblogpassword';
+ CREATE ROLE
+ postgres=# ALTER ROLE crashbloguser SET default_transaction_isolation TO 'read commited';
+ postgres=# ALTER ROLE crashbloguser SET timezone TO 'UTC';
+ ALTER ROLE
+ postgres=# GRANT ALL PRIVILEGES ON DATABASE crushblog TO crashbloguser;
+ GRANT 
+# Now log out (quit) with: 
+\q 
+
+-Install virtualenv
+sudo -H pip3 install virtualenv
+
+* * * Now at 1:44:42 * * *
+
+-Create group and user
+-Create environment
+-Get project from Git
+-Install packages (and PostgreSQL)
+-Install and set up gunicorn
+-Install and set up supervisor
+-Set up NGINX
+
+
 
 # Bulma
 General rules: 

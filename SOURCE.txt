@@ -111,6 +111,10 @@ SOLVE THIS:
 posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) | Q(intro__icontains=query) | Q(body__icontains=query)) 
 * * * At 1:25:25 → SEARCH FUNCTION FINISHED 😊 !!!
 
+# # # Add IMAGES to the posts, add sitemaps to the project and add robots.txt # # #
+No. 1: install Pillow to handle IMAGES =>
+pip install Pillow OR 
+python -m pip install Pillow
 
 
 # Bulma

@@ -13,6 +13,11 @@
                             <!-- <p class="subtitle-is-4">{{ post.created_at|date:'M-d-Y H:i' }}</p> -->
                             <p class="subtitle-is-4">{{ post.created_at|date:'M d, Y' }}{{ post.created_at|timesince }} ago</p>
                             <h1 class="title">{{ post.title }}</h1>
+                            {% if post.image %}
+                                <figure class="image">
+                                    <img src="{{ post.image.url }}" alt="">
+                                </figure>
+                            {% endif %}
                             <p><strong>{{ post.intro }}</strong></p>
 
                             <p>{{ post.body }}</p>

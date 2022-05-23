@@ -1,9 +1,7 @@
 {% extends 'core/base.html' %}
 
 {% block title %}{{ post.title }} | {% endblock %}
-
 {% block content %}
-<!-- <h1>{{ post.title }}</h1> -->
 
 <section class="hero">
     <div class="hero-body">
@@ -13,13 +11,12 @@
                     <div class="column is-8 is-offset-2">
                         <div class="content is-medium">
                             <!-- <p class="subtitle-is-4">{{ post.created_at|date:'M-d-Y H:i' }}</p> -->
-                            <p class="subtitle-is-4">{{ post.created_at|date:'M d, Y' }}</p>
-                            <!-- <p class="subtitle-is-4">{{ post.created_at|timesince }} ago</p> -->
+                            <p class="subtitle-is-4">{{ post.created_at|date:'M d, Y' }}{{ post.created_at|timesince }} ago</p>
                             <h1 class="title">{{ post.title }}</h1>
                             <p><strong>{{ post.intro }}</strong></p>
 
                             <p>{{ post.body }}</p>
-                            <p><small>Category: {{ post.category }}</small></p>
+                            <p><small>Category: <a href="{% url 'category_detail' post.category.slug %}">{{ post.category }}</a></small></p>
                             <hr>
                             <h2 class="subtitle-is-4">Comments</h2>
                             <form method="post" class="mb-6">

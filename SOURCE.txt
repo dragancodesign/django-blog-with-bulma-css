@@ -74,7 +74,14 @@ git commit -m "New Comments Branch"
 17. To upload/ push commit to the new branch: 
 git push origin commentsbranch 
 
-
+*** IMPORTANT: STEPS to commit to the NEW branch *** 1st-Check branch: git branch
+Note: DO git status TO CHECK WHAT'S GOING ON !!!
+No. 1:
+git add .
+No. 2:
+git commit -m "Added: CommentForm to Posts (Front-End) and Categories to Admin (Back-End)"
+No. 3:
+git push origin commentsbranch
 
 
 My comment: 
@@ -83,14 +90,17 @@ a) For now using SQLite Database
 1. DONE: Home page - add Post title, Post intro, Post Body, Post slug
 2. DONE: About page
 3. DONE: Displaying posts -> Now at: 43:00
-
-a)  NOW AT 1:00:00
-
+a)  NOW AT 1:04:00 ⇢ → 
 4. Next step: Add the comments to the blogs
+
+b)  NOW AT 1:04:30 to 1:10:30 ⇢ → Now customizing the Admin area, adding Search functionality in the Posts
+1:10:30 - Generating 'slug field' programmatically 
+1:12:22 - 
+
+
 
 # Bulma CSS
 General rules: 
-
 When you combine a title and a subtitle, they move closer together.
 As a rule of thumb, it is recommended to use a size difference of two. 
 So if you use a "title is-1, combine it with a subtitle is-3". "T-1 & ST-3"

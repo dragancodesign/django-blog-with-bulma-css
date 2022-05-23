@@ -98,11 +98,22 @@ a)  NOW AT 1:04:00 ⇢ →
 
 b)  NOW AT 1:04:30 to 1:10:30 ⇢ → Now customizing the Admin area, adding Search functionality in the Posts
 1:10:30 - Generating 'slug field' programmatically 
-1:12:22 - 
+1:16:00 - Filtered Post to be Active or Drafts and Active & on Front page show ACTIVE.
+1:21:08 → Added path in urls.py IN CORRECT ORDER, it needs to be ON the TOP !!!
+1:21:32 → To check title search by searching 'this', type in url: "127.0.0.1:8000/search/?query=this" and it will return the search results. 
+ → → → → !!! I have noticed at this point that it returns on the FRONT PAGE the results that have status: 'Draft' !!!
+1:22:00 → doing search from body of the post. 
+SOLVE THIS: 
+    posts = Post.objects.filter(Q(title__icontains=query) | Q(intro__icontains=query) | Q(body__icontains=query)) 
+# Q imported to search in multiple fields and " | " means OR !!! 
+!!! QUESTION = PROBLEM: It displays posts that have CHOICES_STATUS = DRAFT !!! 
+* CHANGED: AND it WORKS :-) 😊
+posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) | Q(intro__icontains=query) | Q(body__icontains=query)) 
+* * * At 1:25:25 → SEARCH FUNCTION FINISHED 😊 !!!
 
 
 
-# Bulma CSS
+# Bulma
 General rules: 
 When you combine a title and a subtitle, they move closer together.
 As a rule of thumb, it is recommended to use a size difference of two. 

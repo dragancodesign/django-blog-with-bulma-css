@@ -67,8 +67,10 @@ git push origin main
 git branch -a
 14. Go out of the main branch and be in no one branch:
 git checkout remotes/origin/main
+git checkout remotes/origin/commentsbranch
 15. Create a new branch and LOG INTO IT: git checkout -b newbranch
 git checkout -b commentsbranch
+git checkout -b adminareabranch
 16. Make a commit into the new branch:
 git commit -m "New Comments Branch"
 17. To upload/ push commit to the new branch: 
@@ -82,6 +84,7 @@ No. 2:
 git commit -m "Added: CommentForm to Posts (Front-End) and Categories to Admin (Back-End)"
 No. 3:
 git push origin commentsbranch
+git push origin adminareabranch
 
 
 My comment: 

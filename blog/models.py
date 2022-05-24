@@ -17,11 +17,13 @@ class Category(models.Model):
 
 class Post(models.Model):
     ACTIVE = 'active'
-    DRAFT = 'draft' # This is the value to be stored in database, I have to add: 'archived'
+    DRAFT = 'draft' # This is the value to be stored in database, I have to add: 'archived' → ADDED on staging phase ✓ ✓ ✓
+    ARCHIVE = 'archive'
 
     CHOICES_STATUS = (
         (ACTIVE, 'Active'),
-        (DRAFT, 'Draft') # This is the value to be seen in Admin Interface, I have to add: 'Archived'
+        (DRAFT, 'Draft'), # This is the value to be seen in Admin Interface, I have to add: 'Archived' → ADDED on staging phase ✓ ✓ ✓
+        (ARCHIVE, 'Archive')
     )
     category = models.ForeignKey(Category, related_name='posts', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)

@@ -118,9 +118,14 @@ python -m pip install Pillow
 
 * * * At 1:31:31 → Next step is: sitemaps 😊
 
-1:35:00 -> HE MADE A MESS WITH urls.py & He is now correcting 🙏 
+1:35:00 -> HE MADE A MESS WITH urls.py & He is now correcting 😇 🙏 
 
-At 1:38:27 the sitemaps.xml that he has appears differently, I have one line only: 
+~ ~ ~ ~ ~ ~ ~ ~ 
+!!! I have made a mess with blog/urls.py, when he was changing his mess, copy/pasting here there,
+I did not cut but copied the code 😇
+~ ~ ~ ~ ~ ~ ~ ~ 
+
+At 1:38:27 the sitemap.xml that he has appears differently, it appears in one line only: 
 '''
 http://127.0.0.1:8000/angular/http://127.0.0.1:8000/django/http://127.0.0.1:8000/python/http://127.0.0.1:8000/react/http://127.0.0.1:8000/vue/http://127.0.0.1:8000/angular/this-is-an-angular-post/2022-05-23http://127.0.0.1:8000/react/this-is-react-post/2022-05-20http://127.0.0.1:8000/django/this-is-django-post/2022-05-20
 '''
@@ -170,7 +175,7 @@ sudo -H pip3 install virtualenv
 
 -Create group and user
 
-*** Now at 1:52:45 => COME BACK HERE ! ! !
+*** Now at 1:52:45 => COME BACK HERE AGAIN - Apply this on Virtual Box in Ubuntu Server 22.04  ! ! !
 
 -Create environment
 -Get project from Git

@@ -117,16 +117,21 @@ pip install Pillow OR
 python -m pip install Pillow
 
 * * * At 1:31:31 → Next step is: sitemaps 😊
-1:35:00 -> HE MADE A MESS WITH urls.py & now correcting 🙏
+
+1:35:00 -> HE MADE A MESS WITH urls.py & He is now correcting 🙏 
 
 At 1:38:27 the sitemaps.xml that he has appears differently, I have one line only: 
 '''
 http://127.0.0.1:8000/angular/http://127.0.0.1:8000/django/http://127.0.0.1:8000/python/http://127.0.0.1:8000/react/http://127.0.0.1:8000/vue/http://127.0.0.1:8000/angular/this-is-an-angular-post/2022-05-23http://127.0.0.1:8000/react/this-is-react-post/2022-05-20http://127.0.0.1:8000/django/this-is-django-post/2022-05-20
 '''
 
+He has cut url paths from blog/urls.py to crashblog/urls.py
+* * * I am copying back those urls to blog/urls.py ??? On my system his solution doesn't work. Let's see !!!
+
+
 * * * 
 
-Now at 1:40:37 -> Uploading to the live server, this is Todo List :
+Now at 1:40:37 -> Uploading to the live server, this is Todo List:
 
 -Install software on server: (he uses DigitalOcean)
  He got: Ubuntu 20.04
@@ -155,13 +160,26 @@ sudo -H pip3 install virtualenv
 
 * * * Now at 1:44:42 * * *
 
+~ ~ ~ ~ ~ ~ ~ ~ 
+!!! I HAVE DEACTIVATED EVERYTHING RELATED TO sitemaps BECAUSE IT CREATES ERRORS AND STOPS SERVER TO RUN !!! 
+~ ~ ~ ~ ~ ~ ~ ~ 
+
+
+~ ~ ~ ~ ~ ~ ~ ~ BUT NOW EVERYTHING ELSE WORKS ~ ~ ~ ~ ~ ~ ~ ~ 
+
+
 -Create group and user
+
+*** Now at 1:52:45 => COME BACK HERE ! ! !
+
 -Create environment
 -Get project from Git
 -Install packages (and PostgreSQL)
 -Install and set up gunicorn
 -Install and set up supervisor
 -Set up NGINX
+
+
 
 
 

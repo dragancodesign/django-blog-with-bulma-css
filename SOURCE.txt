@@ -19,6 +19,25 @@ git push -u origin main
 - This solves the problem:
 git remote --verbose
 * * * 
+
+…or create a new repository on the command line
+
+echo "# django-blog-with-bulma-css" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dragancodesign/django-blog-with-bulma-css.git
+git push -u origin main
+
+…or push an existing repository from the command line
+I HAVE ALREADY CREATED REPOSITORY 🎯
+git remote add origin https://github.com/dragancodesign/django-blog-with-bulma-css.git - THIS DON'T WORK
+git remote set-url origin https://github.com/dragancodesign/django-blog-with-bulma-css.git -> THIS WORKED !!!
+git branch -M main
+git push -u origin main
+* * * 
+
 Please specify which branch you want to merge with.
 See git-pull(1) for details.
     git pull <remote> <branch>

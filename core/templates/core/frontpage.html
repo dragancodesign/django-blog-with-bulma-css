@@ -2,13 +2,56 @@
 {% block title %}Home | {% endblock %}
 
 {% block content %}
-<h1>Django Blog frontpage</h1>
+<h1>Build a blog with comments using Django Framework & Bulma CSS</h1>
 <section class="hero">
     <div class="hero-body">
         <div class="container">
             <section class="section">
                 <div class="columns">
-                    <div class="column is-8 is-offset-2">
+
+                    <div class="column is-4">
+                        <div class="box notification">
+                          <p class="has-text-centered"><i class="fa-regular fa-2x fa-code"></i></p><br>
+                          <p class="title is-5 has-text-centered">Blog made with Django Framework and Bulma CSS</p>
+                          <p class="title is-6 has-text-centered"><em>Try it, Use it, Deploy it!</em></p>
+                          <p class="subtitle is-size-6 pt-2">Here we have used Bulma CSS. In other repos will be uploaded other projects made with Bootstrap, Tailwind CSS and maybe Foundation CSS, we'll see ...</p> <p>Also, here we have the default SQLite database, In next projects I may use  MongoDB and PostgreSQL.</p>
+                        </div>
+
+                        <div class="box-shadow media notification is-link">
+                            <!-- media: https://bulma.io/documentation/layout/media-object/ -->
+                            <figure class="media-top">
+                                <span class="icon is-large">
+                                    <i class="fas fa-2x fa-lightbulb"></i>
+                                </span>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-size-4 has-text-centered">Django Framework</h1>
+                                    <p class="is-size-6">Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Link to <a href="https://www.djangoproject.com/" target="_blank">Django Project</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box-shadow media notification is-info">
+                            <!-- media: https://bulma.io/documentation/layout/media-object/ -->
+                            <figure class="media-top">
+                                <!-- icon: https://bulma.io/documentation/elements/icon/ -->
+                                <span class="icon is-large">
+                                    <!-- <i class="fab fa-2x fa-css3-alt"></i> Here is Font Awesome 5 styling -->
+                                    <i class="fab fa-2x fa-css3" aria-hidden="true"></i>
+                                </span>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-size-4 has-text-centered">Bulma CSS</h1>
+                                    <p class="is-size-6">Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free. Link to <a href="https://bulma.io/" target="_blank">Bulma CSS</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-8">
                         {% for post in posts %}
                             <div class="content is-medium">
                                 <a href="{% url 'post_detail' post.category.slug post.slug %}">
@@ -30,8 +73,71 @@
                 </div>
             </section>
             
-        </div>
+        </div> 
     </div>
 </section>
+
+<!-- /.section -->
+<section class="section has-background-light">
+    
+        <div class="columns">
+
+            <div class="column">
+                <article class="media notification is-success">
+                    <!-- media: https://bulma.io/documentation/layout/media-object/ -->
+                    <figure class="media-left">
+                        <!-- icon: https://bulma.io/documentation/elements/icon/ -->
+                        <span class="icon is-large">
+                            <!-- <i class="fab fa-2x fa-css3-alt"></i> Here is Font Awesome 5 styling -->
+                            <i class="fab fa-2x fa-css3" aria-hidden="true"></i>
+                        </span>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="title is-size-4">Bulma CSS</h1>
+                            <p class="is-size-6">Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, has ready-to-use components you can build responsive web interfaces. <br><i class="fas fa-arrow-right"></i> Link to <a href="https://bulma.io/" target="_blank">Bulma CSS</a> ᕕ( ᐛ )ᕗ</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="column">
+                <article class="media notification is-warning">
+                    <figure class="media-left">
+                        <!-- icon: https://bulma.io/documentation/elements/icon/ -->
+                        <span class="icon is-large">
+                            <i class="fas fa-2x fa-dove" aria-hidden="true"></i>
+                        </span>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="title is-size-4">Tailwind CSS</h1>
+                            <p class="is-size-6">A utility-first CSS framework packed with classes like flex , pt-4 , text-center and rotate-90 that can be composed to build any design, directly in your markup. <br><i class="fas fa-arrow-right"></i> Link to <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> <br> ᕕ( ᐛ )ᕗ</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="column">
+                <article class="media notification is-primary">
+                    <figure class="media-left">
+                        <!-- icon: https://bulma.io/documentation/elements/icon/ -->
+                        <span class="icon is-large">
+                            <i class="fa fa-2x fa-check-square" aria-hidden="true"></i>
+                        </span>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="title is-size-4">Bootstrap CSS</h1>
+                            <p class="is-size-6">Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes ... <br><i class="fas fa-arrow-right"></i> Link to <a href="https://getbootstrap.com/" target="_blank">Bootstrap CSS</a> <br> ᕕ( ᐛ )ᕗ</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+</section>
+<!-- /.section -->
 
 {% endblock %}

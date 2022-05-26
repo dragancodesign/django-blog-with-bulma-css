@@ -1,10 +1,342 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}About | {% endblock %}
 
-
 {% block content %}
+<h1 class="title has-text-centered">Tutorial</h1>
 
-<h1>About</h1>
+
+<h2 class="subtitle is-4"> How to use Django Framework - steps</h2>
+<p class="subtitle">Creating venv or (virtualenv)</p>
+<p class="subtitle">Creating Project</p>
+<p class="subtitle">Creating App</p>
+
+<br>
+<h4 class="title has-text-centered">Using MongoDB with Django instructions</h4>
+<br>
+<h3 class="subtitle is-5"> Install MongoDB and start MongoDB server, database, collection to be ready, then prepare Virtual Environment, Django (project & app) and connect MongoDB -> </h3>
+<br>
+<h5>1st Step</h5>
+<p>1. Open <strong>1st Terminal window</strong> and type: <strong>mongod</strong></p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >mongod</code></pre>
+
+<p>To exit 1st Terminal window type: </p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >
+# To exit 1st Terminal window press: 
+"Control + c"
+</code></pre>
+
+
+
+<h5>2nd Step</h5>
+<p>2. Open <strong>2nd Terminal window</strong> and type: <strong>mongo</strong></p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >mongo
+</code></pre>
+<p>To exit this Terminal window type: </p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >
+# To exit this Terminal window type: 
+exit
+</code></pre>
+
+<h5>3rd Step</h5>
+<p>3. <strong>Start MongoDB Compass</strong> application</p>
+<p>Press CONNECT inside the MongoDB Compass</p>
+
+
+<h5>4th Step</h5>
+
+
+<h5> <em><strong> * * * Creating Venv, Project & App * * * <br>- Important to know how to make different Virtual Environments: venv OR virtualenv </strong></em> </h5>
+<br>
+<p> <strong> → a) Create Virtual Environment</strong> </p>
+<p>1. Open the Terminal inside the directory where you want to install Virtual Environment (note the space and the dot " . " at the end of the line) !</p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >python3 -m venv . # (MY WAY)
+</code></pre>
+<p> Then activate your Virtual Environment</p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >source venv/bin/activate</code></pre>
+<p> Take care in which directory you are, but you have to point to: bin/activate, from your Terminal, so you can navigate any way you wish.</p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >source bin/activate</code></pre>
+<p>When needed to DEACTIVATE you can do it from any directory! Just type: DEACTIVATE</p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >deactivate</code></pre>
+
+<p> <strong> → b) Install Django</strong> </p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >pip install django</code></pre>
+
+<p> <strong> → c) Create Project</strong> </p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >django-admin startproject myproject</code></pre>
+<br>
+
+<br>
+<h5 class="subtitle is-size-4 has-text-centered"><strong>This way I have not been using, until now - follow the steps :</strong></h5>
+<br>
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!" >
+    pip3 install virtualenv
+</code></pre>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!" >
+    virtualenv VIRTUAL_env
+</code></pre>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">
+    source VIRTUAL_env/bin/activate
+</code></pre>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">
+pip3 install django
+</code></pre>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!" >
+    django-admin startproject PROJECT_NAME
+</code></pre>
+<br>
+
+<h3 class="subtitle">Here is the summary and explanation of all the steps:</h3>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >
+pip3 install virtualenv # ANOTHER WAY + after that:
+virtualenv VIRTUAL_env # THIS CREATES NEW VIRTUAL ENVIRONMENT with this name ADD: _env
+source VIRTUAL_env/bin/activate # THIS ACTIVATES NEW VIRTUAL ENVIRONMENT
+# Now it will show at the beginning (VIRTUAL_env) and it means it's activted
+pip3 install django
+django-admin startproject PROJECT_NAME
+</code></pre>
+<br>
+<p class="subtitle">From now on, everything is just the same</p>
+<br>
+<p>After this <strong>START the SERVER,</strong> to test if everything is working OK:</p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >python manage.py runserver</code></pre>
+
+<p>Open the browser and go to:</p>
+<p> <strong><a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></strong> </p>
+
+<p>After testing this STOP the SERVER :</p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >To stop the server press: 
+"Control + c"</code></pre>
+
+<p> <strong> → d) Create an App</strong> </p>
+<p> →  Navigate with the Terminal inside the project directory, we need to create our App(s) inside this directory. We can create multiple Apps inside our Project directory.</p>
+<p>To create ( / start ) our Django app type inside the Terminal:</p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >
+python manage.py startapp my_app_name</code></pre>
+
+
+<p> * Bellow is process is going to generate a database in Mongo</p>
+<p> Concept: Migrations, Now at: 24:40 → TO CONTINUE </p>
+
+<p>Bellow is process is going to generate a database in Mongo</p>
+<br>
+<h3 class="subtitle is-5">- Install Djongo</h3>
+<p><a href="https://pypi.org/project/djongo">https://pypi.org/project/djongo</a></p>
+
+<p>Type into the Terminal: <strong>pip install djongo</strong> → </p>
+
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!">pip install djongo</code></pre>
+
+<p> <strong>1) Look for DATABASES = { } inside inside the settings.py: </strong> </p>
+
+<p> <strong>2) Paste this CODE inside settings.py: </strong> </p>
+
+<pre class="line-numbers"><code class="language-python rainbow-braces"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >DATABASES = {
+'default': {
+'ENGINE': 'djongo',
+'NAME': 'db-name',
+  }
+}</code></pre>
+
+<br>
+<br>
+
+<br>
+<br>
+<h5 class="subtitle is-4">5th Step</h5>
+<p>And migration: </p>
+<p>Type in the Terminal: <strong>python manage.py makemigrations</strong> →  </p>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">python manage.py makemigrations
+</code>
+</pre>
+
+<p>It shows: No changes detected</p>
+
+<p>Type in the Terminal: <strong>python manage.py migrate</strong> →  </p>
+
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">python manage.py migrate
+</code>
+</pre>
+<br>
+<p class="title is-size-4 has has-text-centered"> <strong>Migrations have been applied ! </strong> </p>
+
+
+<h5 class="subtitle is-4">6th Step</h5>
+<p>Inside the <strong>models.py</strong></p>
+<!-- IMPORTANT TO CORRECT ! ! !  -->
+<pre><code class="language-html"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">
+from django.db import models
+# Create your models here.
+class ToDo(models.Model):
+    task = models.CharField(max_length=30)
+    description = models.CharField(max_length=100)
+    </code></pre>
+
+<br>
+
+<h5 class="subtitle is-4">7th Step - NOW HERE !!!</h5>
+<p>Inside the <strong>admin.py</strong>
+<p> <em>Register this: </em></p>
+<pre class="line-numbers"><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >
+from django.contrib import admin
+# Register your models here.
+from .models import *
+# admin.site.register(ToDo) #??? at 26:39
+</code></pre>
+<br>
+<br>
+<h6>Create superuser from Terminal :</h6>
+<p> <strong>python manage.py createsuperuser</strong> </p> <br>
+<pre><code class="language-python"
+    data-prismjs-copy="Сopy me"
+    data-prismjs-copy-success="I've been copied!">
+python manage.py createsuperuser
+    </code>
+</pre>
+
+<p>Type in the Terminal: id and password →  </p>
+
+<p>migrate </p>
+
+<br>
+<br>
+<p>Create Project</p>
+<p>4. Concept: Migrations, Now at: 24:40 → TO CONTINUE </p>
+<br>
+<h4 class="subtitle is-4 has-text-centered">How to Use Django with MongoDB (from official website) :</h4>
+<h5><a href="https://www.mongodb.com/compatibility/mongodb-and-django" target="_blank">https://www.mongodb.com/compatibility/mongodb-and-django</a></h5>
+<br>
+
+<h3 class="subtitle is-5"><em>There are three ways to connect Django to MongoDB:</em></h3>
+<ol start="1">
+<li><strong>PyMongo</strong>: PyMongo is the standard driver through which MongoDB can interact with Django. It is the official and preferred way of using MongoDB with Python. PyMongo provides functionality to perform all the database actions like search, delete, update, and insert. Since PyMongo is available with PyPI, you can quickly install it using a pip command.</li>
+<li><strong>MongoEngine</strong>: MongoEngine is a Python Object-Document-Mapper. It&rsquo;s similar to Object-Relational-Mapper in relational databases. MongoEngine has a declarative API that is easy to learn and use.</li>
+<li><strong>Djongo</strong>: If you are using a relational database like SQL and want to migrate to MongoDB, for that you can use Djongo. Without changing the Django ORM, Djongo transpiles all the SQL queries to MongoDB syntax queries.</li>
+</ol>
+<p>Which approach to connect to Django MongoDB is better? Let us explore this in the following sections.</p>
+
+
+<h3>Connect Django and MongoDB Using Djongo</h3>
+<p>Djongo is an improvement over PyMongo in that developers need not write lengthy queries. It maps Python objects to MongoDB documents, i.e., Object Document Mapping (ODM). Djongo ensures that only clean data enters the database. By performing integrity checks, applying validations, etc. with Djongo, there is no need to modify the existing Django ORM.</p>
+<p>Install Djongo:</p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >pip install djongo</code></pre>
+<p>Now, go to your project directory (example, <strong>MyFirstDjangoProj</strong>), and open settings.py file. You can edit it on Textpad, Python IDE, or any editor. Search for DATABASES, and change the settings to point to MongoDB. The ENGINE will be djongo and the database name (NAME) will be your MongoDB database name.</p>
+<pre class="line-numbers"><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >DATABASES = {
+'default': {
+'ENGINE': 'djongo',
+'NAME': 'db-name',
+}
+}</code></pre>
+<p>If your database is not on localhost or is secured, you should also fill in the CLIENT information like HOST, USERNAME, PASSWORD, etc.</p>
+<pre class="line-numbers"><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >DATABASES = {
+'default': {
+'ENGINE': 'djongo',
+'NAME': 'your-db-name',
+'ENFORCE_SCHEMA': False,
+'CLIENT': {
+'host': 'mongodb+srv://&lt;username&gt;:&lt;password&gt;@&lt;atlas cluster&gt;/&lt;myFirstDatabase&gt;?retryWrites=true&amp;w=majority'
+}
+}
+}</code></pre>
+<p>Make sure that the app-name is added in the INSTALLED_APPS setting of your settings.py:</p>
+<pre class="line-numbers"><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >INSTALLED_APPS = [
+'myfirstapp',
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+]</code></pre>
+<p>Now that we have the <a href="https://developer.mongodb.com/community/forums/t/getting-timeout-error-while-connecting-to-mongodb-atlas-uri-in-django-project/13213" target="_target">Django project</a> (and app), you can create the collections in MongoDB using the commands:</p>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >python manage.py makemigrations &lt;app-name&gt;</code></pre>
+<pre><code class="language-python"
+data-prismjs-copy="Сopy me"
+data-prismjs-copy-success="I've been copied!" >python manage.py migrate</code></pre>
+<p>The collections (Django model in the app&mdash;note that we are talking about the <em>app</em> and not the <em>project</em>) will be created. You can check the same by opening Django Admin.</p>
+<p>You can use the Admin GUI or insert data into collections manually.</p>
+<p>To use the admin console, open your browser and go to <a href="http://127.0.0.1:8000/admin" target="_target">http://127.0.0.1:8000/admin</a> (or localhost). You should create a superuser to enter the admin console. If you do not have any models in your app, follow the <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site" target="_target">Django tutorial on how to create and register models</a>.</p>
+<p>If you want Djongo to go migration-free, set <code>ENFORCE_SCHEMA: False</code> in your database configuration. With this setting, the collections are created on the fly and Djongo won&rsquo;t transpile SQL statements into MongoDB commands.</p>
+<p style="text-align: right;"><a href="https://www.mongodb.com/compatibility/mongodb-and-django#table-of-contents" target="_blank">Go to source article</a></p>
+
+
+
+
 
 {% endblock %}

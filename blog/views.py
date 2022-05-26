@@ -1,5 +1,6 @@
 from django.db.models import Q # This allows us to search in multiple fields !!!
 from django.shortcuts import get_object_or_404, redirect, render
+from django.http import HttpResponse
 
 from .forms import CommentForm
 from .models import Post, Category
@@ -7,7 +8,7 @@ from .models import Post, Category
 # Create your views here.
 
 def detail(request, category_slug, slug):
-    post = get_object_or_404(Post, slug=slug, status=Post.ACTIVE) # Here added active status
+    post = get_object_or_404(Post, slug=slug, status=Post.PUBLISHED) # Here added published status
 
     if request.method == 'POST':
         form = CommentForm(request.POST)
@@ -27,14 +28,14 @@ def detail(request, category_slug, slug):
 
 def category(request, slug):
     category = get_object_or_404(Category, slug=slug)
-    posts = category.posts.filter(status=Post.ACTIVE)
+    posts = category.posts.filter(status=Post.PUBLISHED)
 
     return render(request, 'blog/category.html', {'category': category, 'posts': posts})
 
 def search(request):
     query = request.GET.get('query', '')
 
-    posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) | Q(intro__icontains=query) | Q(body__icontains=query)) 
+    posts = Post.objects.filter(status=Post.PUBLISHED).filter(Q(title__icontains=query) | Q(intro__icontains=query) | Q(body__icontains=query)) 
 # Q imported to search in multiple fields and " | " means OR !!! 
 # QUESTION = PROBLEM: It displays posts that have CHOICES_STATUS = DRAFT !!!
 

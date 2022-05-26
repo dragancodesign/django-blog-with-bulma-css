@@ -1,0 +1,76 @@
+
+/*-------------------------------------------
+        Navigation Bar
+-------------------------------------------*/
+/* .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 50px 10px 100px;
+    transition: 1s ease;
+}
+
+.nav-link::after {
+    color: white;
+} */
+/*-------------------------------------------
+        Headings & Text
+-------------------------------------------*/
+/* 
+h1 {
+    color: green;
+    padding-top: 2rem;
+    text-align: center;
+}
+h2 {
+    color: orangered;
+    padding-top: 1rem;
+    text-align: center;
+}
+h3 {
+    color: orange;
+    padding-top: 1rem;
+    text-align: center;
+}
+h4 {
+    color: orchid;
+    padding-top: 2rem;
+    text-align: center;
+}
+h5 {
+    color: blue;
+    padding-top: 1rem;
+    text-align: center;
+}
+p {
+    text-align: center;
+    text-align: justify;
+} */
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {  
+ 
+} */
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (min-width: 768px) {  
+ 
+} */
+ 
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+ 
+} */
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {  
+    
+} */
+ 
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+/* @media (min-width: 1400px) {  
+     */
+/* } */

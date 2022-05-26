@@ -16,12 +16,12 @@ class Category(models.Model):
 
 
 class Post(models.Model):
-    ACTIVE = 'active'
+    PUBLISHED = 'published'
     DRAFT = 'draft' # This is the value to be stored in database, I have to add: 'archived' → ADDED on staging phase ✓ ✓ ✓
     ARCHIVE = 'archived'
 
     CHOICES_STATUS = (
-        (ACTIVE, 'Active'),
+        (PUBLISHED, 'Published'),
         (DRAFT, 'Draft'), # This is the value to be seen in Admin Interface, I have to add: 'Archived' → ADDED on staging phase ✓ ✓ ✓
         (ARCHIVE, 'Archived')
     )
@@ -31,7 +31,7 @@ class Post(models.Model):
     intro = models.TextField()
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    status = models.CharField(max_length=10, choices=CHOICES_STATUS, default=ACTIVE)
+    status = models.CharField(max_length=10, choices=CHOICES_STATUS, default=PUBLISHED)
     image = models.ImageField(upload_to='uploads/', blank=True, null=True) # null=True -> Because not all posts need to have an image!
 
     class Meta:

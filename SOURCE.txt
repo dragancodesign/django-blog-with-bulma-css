@@ -19,7 +19,15 @@ git push -u origin main
 - This solves the problem:
 git remote --verbose
 * * * 
+What's the use of the staging area in Git?
+https://stackoverflow.com/questions/49228209/whats-the-use-of-the-staging-area-in-git
+ ↓ ↓ ↓ ↓ ↓ ↓
+git diff → Before you commit, you'll probably review the whole change by using "git diff". If you stage each change as you review it, you'll find that you can concentrate better on the changes that are not yet staged.
 
+
+
+
+* * * * * * 
 …or create a new repository on the command line
 
 echo "# django-blog-with-bulma-css" >> README.md

@@ -1,8 +1,12 @@
 {% extends 'core/base.html' %}
 {% block title %}Home | {% endblock %}
-
+{% load static %}
 {% block content %}
-<h1>Build a blog with comments using Django Framework & Bulma CSS</h1>
+<br>
+<h1 class="title has-text-weight-semibold has-text-centered">Build a blog with comments using Django Framework & Bulma CSS</h1>
+<br>
+<img src="{% static 'images/home-img.jpg' %}" class="img-fluid" alt="Tech Courses">
+
 <section class="hero">
     <div class="hero-body">
         <div class="container">
@@ -11,9 +15,15 @@
 
                     <div class="column is-4">
                         <div class="box notification">
-                          <p class="has-text-centered"><i class="fa-regular fa-2x fa-code"></i></p><br>
+                          <!-- <p class="has-text-centered"><i class="fa-solid fa-code"></i></p><br> -->
+                          <figure class="media-top has-text-centered">
+                              <span class="icon is-large has-text-link">
+                                  <i class="fas fa-3x fa-lightbulb"></i>
+                              </span>
+                          </figure>
+                          <br>
                           <p class="title is-5 has-text-centered">Blog made with Django Framework and Bulma CSS</p>
-                          <p class="title is-6 has-text-centered"><em>Try it, Use it, Deploy it!</em></p>
+                          <p class="title is-6 has-text-centered"><em>This blog has comments and search integrated.</em></p>
                           <p class="subtitle is-size-6 pt-2">Here we have used Bulma CSS. In other repos will be uploaded other projects made with Bootstrap, Tailwind CSS and maybe Foundation CSS, we'll see ...</p> <p>Also, here we have the default SQLite database, In next projects I may use  MongoDB and PostgreSQL.</p>
                         </div>
 
@@ -21,7 +31,7 @@
                             <!-- media: https://bulma.io/documentation/layout/media-object/ -->
                             <figure class="media-top">
                                 <span class="icon is-large">
-                                    <i class="fas fa-2x fa-lightbulb"></i>
+                                    <i class="fas fa-2x fa-solid fa-code"></i>
                                 </span>
                             </figure>
                             <div class="media-content">
